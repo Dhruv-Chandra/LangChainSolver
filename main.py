@@ -4,10 +4,6 @@ from dotenv import load_dotenv
 load_dotenv()
 from typing import Set
 from core import get_llm_output
-from io import BytesIO
-
-import requests
-from PIL import Image
 
 st.set_page_config(
     page_title="Your App Title",
