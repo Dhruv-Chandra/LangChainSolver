@@ -1,2 +1,4 @@
 /.env
 /Ingestion.ipynb
+secrets.toml
+/.gitignore

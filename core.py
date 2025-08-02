@@ -17,8 +17,8 @@ def get_llm_output(query, chat_history):
     gemini_api = st.secrets["GEMINI_API"]
     gemini_model = st.secrets["GEMINI_MODEL"]
     gemini_embed_model = st.secrets["GEMINI_EMBED_MODEL"]
-    pinecone_index = st.secrets["PINECONE_INDEX"]
-    pinecone_api = st.secrets["PINECONE_API"]
+    pinecone_index = st.secrets["INDEX_NAME"]
+    pinecone_api = st.secrets["PINECONE_API_KEY"]
     os.environ["PINECONE_API_KEY"] = pinecone_api
     google_application_credentials = st.secrets["GOOGLE_APPLICATION_CREDENTIALS"]
 
