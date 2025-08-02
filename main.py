@@ -6,7 +6,7 @@ from typing import Set
 from core import get_llm_output
 
 st.set_page_config(
-    page_title="Your App Title",
+    page_title="LangChain Solver",
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded",
