@@ -4,3 +4,4 @@ langchain-google-genai
 langchain-pinecone
 asyncio
 typing
+azure-storage-blob
