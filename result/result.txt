@@ -1,0 +1,314 @@
+[2025-08-02 18:44:01]
+Query: what is langchain?
+Document ID: ece347a2-af0f-41ea-99c2-9a8496181354
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: chains.graph_qa.hugegraph.HugeGraphQAChain
+Chain for question-answering against a graph by generating gremlin statements.
+chains.graph_qa.kuzu.KuzuQAChain
+Question-answering against a graph by generating Cypher statements for Kùzu.
+chains.graph_qa.nebulagraph.NebulaGraphQAChain
+Chain for question-answering against a graph by generating nGQL statements.
+chains.graph_qa.neptune_cypher.NeptuneOpenCypherQAChain
+Chain for question-answering against a Neptune graph by generating openCypher statements.
+chains.graph_qa.neptune_sparql.NeptuneSparqlQAChain
+Chain for question-answering against a Neptune graph by generating SPARQL statements.
+chains.graph_qa.ontotext_graphdb.OntotextGraphDBQAChain
+Question-answering against Ontotext GraphDB
+chains.graph_qa.sparql.GraphSparqlQAChain
+Question-answering against an RDF or OWL graph by generating SPARQL statements.
+chains.llm_requests.LLMRequestsChain
+Chain that requests a URL and then uses an LLM to parse results.
+Relevance Score: 0.824236155
+--------------------------------------------------
+Document ID: 578b5cd4-3b74-456d-9e5b-a65e699a27cc
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: chains.openapi.chain.OpenAPIEndpointChain
+Chain interacts with an OpenAPI endpoint using natural language.
+chains.openapi.requests_chain.APIRequesterChain
+Get the request parser.
+chains.openapi.requests_chain.APIRequesterOutputParser
+Parse the request and error tags.
+chains.openapi.response_chain.APIResponderChain
+Get the response parser.
+chains.openapi.response_chain.APIResponderOutputParser
+Parse the response and error tags.
+chains.pebblo_retrieval.base.PebbloRetrievalQA
+Retrieval Chain with Identity & Semantic Enforcement for question-answering against a vector database.
+chains.pebblo_retrieval.models.App
+Create a new model by parsing and validating input data from keyword arguments.
+chains.pebblo_retrieval.models.AuthContext
+Class for an authorization context.
+chains.pebblo_retrieval.models.ChainInput
+Input for PebbloRetrievalQA chain.
+chains.pebblo_retrieval.models.Chains
+Create a new model by parsing and validating input data from keyword arguments.
+Relevance Score: 0.807367861
+--------------------------------------------------
+Document ID: 484c22e7-5a81-4f9f-948a-55965b419b8d
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: langchain_community.indexes¶
+Index is used to avoid writing duplicated content
+into the vectostore and to avoid over-writing content if it’s unchanged.
+Indexes also :
+Create knowledge graphs from data.
+Support indexing workflows from LangChain data loaders to vectorstores.
+Importantly, Index keeps on working even if the content being written is derived
+via a set of transformations from some source content (e.g., indexing children
+documents that were derived from parent documents by chunking.)
+Classes¶
+indexes.base.RecordManager(namespace)
+Abstract base class for a record manager.
+langchain_community.llms¶
+LLM classes provide
+access to the large language model (LLM) APIs and services.
+Class hierarchy:
+BaseLanguageModel --> BaseLLM --> LLM --> <name>  # Examples: AI21, HuggingFaceHub, OpenAI
+Main helpers:
+LLMResult, PromptValue,
+CallbackManagerForLLMRun, AsyncCallbackManagerForLLMRun,
+CallbackManager, AsyncCallbackManager,
+AIMessage, BaseMessage
+Classes¶
+llms.ai21.AI21
+Relevance Score: 0.80081743
+--------------------------------------------------
+Document ID: cd69b0a6-118b-460b-90d6-7aadff443dd2
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: llms.openai.BaseOpenAI
+Base OpenAI large language model class.
+llms.openai.OpenAI
+[Deprecated] OpenAI large language models.
+llms.openai.OpenAIChat
+[Deprecated] OpenAI Chat large language models.
+llms.openllm.IdentifyingParams
+Parameters for identifying a model as a typed dict.
+llms.openllm.OpenLLM
+OpenLLM, supporting both in-process model instance and remote OpenLLM servers.
+llms.openlm.OpenLM
+OpenLM models.
+llms.pai_eas_endpoint.PaiEasEndpoint
+Langchain LLM class to help to access eass llm service.
+llms.petals.Petals
+Petals Bloom models.
+llms.pipelineai.PipelineAI
+PipelineAI large language models.
+llms.predibase.Predibase
+Use your Predibase models with Langchain.
+llms.predictionguard.PredictionGuard
+Prediction Guard large language models.
+llms.promptlayer_openai.PromptLayerOpenAI
+PromptLayer OpenAI large language models.
+llms.promptlayer_openai.PromptLayerOpenAIChat
+PromptLayer OpenAI large language models.
+llms.replicate.Replicate
+Replicate models.
+llms.rwkv.RWKV
+Relevance Score: 0.793603718
+--------------------------------------------------
+
+[2025-08-02 19:10:04]
+Query: what is langchain?
+Document ID: ece347a2-af0f-41ea-99c2-9a8496181354
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: chains.graph_qa.hugegraph.HugeGraphQAChain
+Chain for question-answering against a graph by generating gremlin statements.
+chains.graph_qa.kuzu.KuzuQAChain
+Question-answering against a graph by generating Cypher statements for Kùzu.
+chains.graph_qa.nebulagraph.NebulaGraphQAChain
+Chain for question-answering against a graph by generating nGQL statements.
+chains.graph_qa.neptune_cypher.NeptuneOpenCypherQAChain
+Chain for question-answering against a Neptune graph by generating openCypher statements.
+chains.graph_qa.neptune_sparql.NeptuneSparqlQAChain
+Chain for question-answering against a Neptune graph by generating SPARQL statements.
+chains.graph_qa.ontotext_graphdb.OntotextGraphDBQAChain
+Question-answering against Ontotext GraphDB
+chains.graph_qa.sparql.GraphSparqlQAChain
+Question-answering against an RDF or OWL graph by generating SPARQL statements.
+chains.llm_requests.LLMRequestsChain
+Chain that requests a URL and then uses an LLM to parse results.
+Relevance Score: 0.824236155
+--------------------------------------------------
+Document ID: 578b5cd4-3b74-456d-9e5b-a65e699a27cc
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: chains.openapi.chain.OpenAPIEndpointChain
+Chain interacts with an OpenAPI endpoint using natural language.
+chains.openapi.requests_chain.APIRequesterChain
+Get the request parser.
+chains.openapi.requests_chain.APIRequesterOutputParser
+Parse the request and error tags.
+chains.openapi.response_chain.APIResponderChain
+Get the response parser.
+chains.openapi.response_chain.APIResponderOutputParser
+Parse the response and error tags.
+chains.pebblo_retrieval.base.PebbloRetrievalQA
+Retrieval Chain with Identity & Semantic Enforcement for question-answering against a vector database.
+chains.pebblo_retrieval.models.App
+Create a new model by parsing and validating input data from keyword arguments.
+chains.pebblo_retrieval.models.AuthContext
+Class for an authorization context.
+chains.pebblo_retrieval.models.ChainInput
+Input for PebbloRetrievalQA chain.
+chains.pebblo_retrieval.models.Chains
+Create a new model by parsing and validating input data from keyword arguments.
+Relevance Score: 0.807367861
+--------------------------------------------------
+Document ID: 484c22e7-5a81-4f9f-948a-55965b419b8d
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: langchain_community.indexes¶
+Index is used to avoid writing duplicated content
+into the vectostore and to avoid over-writing content if it’s unchanged.
+Indexes also :
+Create knowledge graphs from data.
+Support indexing workflows from LangChain data loaders to vectorstores.
+Importantly, Index keeps on working even if the content being written is derived
+via a set of transformations from some source content (e.g., indexing children
+documents that were derived from parent documents by chunking.)
+Classes¶
+indexes.base.RecordManager(namespace)
+Abstract base class for a record manager.
+langchain_community.llms¶
+LLM classes provide
+access to the large language model (LLM) APIs and services.
+Class hierarchy:
+BaseLanguageModel --> BaseLLM --> LLM --> <name>  # Examples: AI21, HuggingFaceHub, OpenAI
+Main helpers:
+LLMResult, PromptValue,
+CallbackManagerForLLMRun, AsyncCallbackManagerForLLMRun,
+CallbackManager, AsyncCallbackManager,
+AIMessage, BaseMessage
+Classes¶
+llms.ai21.AI21
+Relevance Score: 0.80081743
+--------------------------------------------------
+Document ID: cd69b0a6-118b-460b-90d6-7aadff443dd2
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: llms.openai.BaseOpenAI
+Base OpenAI large language model class.
+llms.openai.OpenAI
+[Deprecated] OpenAI large language models.
+llms.openai.OpenAIChat
+[Deprecated] OpenAI Chat large language models.
+llms.openllm.IdentifyingParams
+Parameters for identifying a model as a typed dict.
+llms.openllm.OpenLLM
+OpenLLM, supporting both in-process model instance and remote OpenLLM servers.
+llms.openlm.OpenLM
+OpenLM models.
+llms.pai_eas_endpoint.PaiEasEndpoint
+Langchain LLM class to help to access eass llm service.
+llms.petals.Petals
+Petals Bloom models.
+llms.pipelineai.PipelineAI
+PipelineAI large language models.
+llms.predibase.Predibase
+Use your Predibase models with Langchain.
+llms.predictionguard.PredictionGuard
+Prediction Guard large language models.
+llms.promptlayer_openai.PromptLayerOpenAI
+PromptLayer OpenAI large language models.
+llms.promptlayer_openai.PromptLayerOpenAIChat
+PromptLayer OpenAI large language models.
+llms.replicate.Replicate
+Replicate models.
+llms.rwkv.RWKV
+Relevance Score: 0.793603718
+--------------------------------------------------
+
+[2025-08-02 19:20:23]
+Query: what is langchain
+Document ID: ece347a2-af0f-41ea-99c2-9a8496181354
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: chains.graph_qa.hugegraph.HugeGraphQAChain
+Chain for question-answering against a graph by generating gremlin statements.
+chains.graph_qa.kuzu.KuzuQAChain
+Question-answering against a graph by generating Cypher statements for Kùzu.
+chains.graph_qa.nebulagraph.NebulaGraphQAChain
+Chain for question-answering against a graph by generating nGQL statements.
+chains.graph_qa.neptune_cypher.NeptuneOpenCypherQAChain
+Chain for question-answering against a Neptune graph by generating openCypher statements.
+chains.graph_qa.neptune_sparql.NeptuneSparqlQAChain
+Chain for question-answering against a Neptune graph by generating SPARQL statements.
+chains.graph_qa.ontotext_graphdb.OntotextGraphDBQAChain
+Question-answering against Ontotext GraphDB
+chains.graph_qa.sparql.GraphSparqlQAChain
+Question-answering against an RDF or OWL graph by generating SPARQL statements.
+chains.llm_requests.LLMRequestsChain
+Chain that requests a URL and then uses an LLM to parse results.
+Relevance Score: 0.815938413
+--------------------------------------------------
+Document ID: 578b5cd4-3b74-456d-9e5b-a65e699a27cc
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: chains.openapi.chain.OpenAPIEndpointChain
+Chain interacts with an OpenAPI endpoint using natural language.
+chains.openapi.requests_chain.APIRequesterChain
+Get the request parser.
+chains.openapi.requests_chain.APIRequesterOutputParser
+Parse the request and error tags.
+chains.openapi.response_chain.APIResponderChain
+Get the response parser.
+chains.openapi.response_chain.APIResponderOutputParser
+Parse the response and error tags.
+chains.pebblo_retrieval.base.PebbloRetrievalQA
+Retrieval Chain with Identity & Semantic Enforcement for question-answering against a vector database.
+chains.pebblo_retrieval.models.App
+Create a new model by parsing and validating input data from keyword arguments.
+chains.pebblo_retrieval.models.AuthContext
+Class for an authorization context.
+chains.pebblo_retrieval.models.ChainInput
+Input for PebbloRetrievalQA chain.
+chains.pebblo_retrieval.models.Chains
+Create a new model by parsing and validating input data from keyword arguments.
+Relevance Score: 0.802255
+--------------------------------------------------
+Document ID: 484c22e7-5a81-4f9f-948a-55965b419b8d
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: langchain_community.indexes¶
+Index is used to avoid writing duplicated content
+into the vectostore and to avoid over-writing content if it’s unchanged.
+Indexes also :
+Create knowledge graphs from data.
+Support indexing workflows from LangChain data loaders to vectorstores.
+Importantly, Index keeps on working even if the content being written is derived
+via a set of transformations from some source content (e.g., indexing children
+documents that were derived from parent documents by chunking.)
+Classes¶
+indexes.base.RecordManager(namespace)
+Abstract base class for a record manager.
+langchain_community.llms¶
+LLM classes provide
+access to the large language model (LLM) APIs and services.
+Class hierarchy:
+BaseLanguageModel --> BaseLLM --> LLM --> <name>  # Examples: AI21, HuggingFaceHub, OpenAI
+Main helpers:
+LLMResult, PromptValue,
+CallbackManagerForLLMRun, AsyncCallbackManagerForLLMRun,
+CallbackManager, AsyncCallbackManager,
+AIMessage, BaseMessage
+Classes¶
+llms.ai21.AI21
+Relevance Score: 0.798376441
+--------------------------------------------------
+Document ID: ec8f8e43-c6ca-4042-b7d3-0ee1d7da9f13
+Source: https:/api.python.langchain.com/en\latest\community_api_reference.html
+Document: query_constructors.weaviate.WeaviateTranslator()
+Translate Weaviate internal query language elements to valid filters.
+Functions¶
+query_constructors.deeplake.can_cast_to_float(string)
+Check if a string can be cast to a float.
+query_constructors.milvus.process_value(...)
+Convert a value to a string and add double quotes if it is a string.
+query_constructors.vectara.process_value(value)
+Convert a value to a string and add single quotes if it is a string.
+langchain_community.retrievers¶
+Retriever class returns Documents given a text query.
+It is more general than a vector store. A retriever does not need to be able to
+store documents, only to return (or retrieve) it. Vector stores can be used as
+the backbone of a retriever, but there are other types of retrievers as well.
+Class hierarchy:
+BaseRetriever --> <name>Retriever  # Examples: ArxivRetriever, MergerRetriever
+Main helpers:
+Document, Serializable, Callbacks,
+CallbackManagerForRetrieverRun, AsyncCallbackManagerForRetrieverRun
+Relevance Score: 0.788936555
+--------------------------------------------------
+
