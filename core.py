@@ -1,7 +1,7 @@
 import os, asyncio
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 from langchain.chains.history_aware_retriever import create_history_aware_retriever
 from langchain import hub
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
