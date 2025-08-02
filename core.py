@@ -1,8 +1,4 @@
 import os, asyncio
-
-from dotenv import load_dotenv
-
-
 from langchain.chains.history_aware_retriever import create_history_aware_retriever
 from langchain import hub
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
@@ -10,13 +6,30 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains.retrieval import create_retrieval_chain
 from langchain_pinecone import PineconeVectorStore
 import streamlit as st
-import datetime, json, base64
+import datetime
+from azure.storage.blob import BlobClient
 
+def upload_blob_with_sas_url(sas_url, data, blob_name):
+    date = datetime.datetime.now().strftime("%Y-%m-%d")
+    try:
+        if '?' in sas_url:
+            base_url, sas_token = sas_url.split('?', 1)
+            if not base_url.endswith('/'):
+                base_url += '/'
+            full_blob_url = f"{base_url}{date}/{blob_name}?{sas_token}"
+        else:
+            full_blob_url = sas_url
+
+        blob_client = BlobClient.from_blob_url(full_blob_url)
+        blob_client.upload_blob(data, overwrite=True)
+
+    except Exception as e:
+        print(f"Error uploading file: {e}")
 
 def save_output(query, vectorstore):
     date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     res = f"[{date}]\n"
-    res += f"Query: {query}\n"
+    res += f"Query: {query}\n\n"
 
     retrieved_documents_with_scores = vectorstore.similarity_search_with_score(query)
 
@@ -25,11 +38,13 @@ def save_output(query, vectorstore):
         res += f"Source: {doc.metadata["source"]}\n"
         res += f"Document: {doc.page_content}\n"
         res += f"Relevance Score: {score}\n"
-        res += "-" * 50 + "\n"
+        res += "-" * 50 + "\n"   
 
-    with open("./result/result.txt", "a") as f:
-        f.write(res)
-        f.write("\n\n")
+    # container_sas_url = os.getenv("AZURE_BLOB")
+    container_sas_url = st.secrets["AZURE_BLOB"]
+    azure_blob_name = f"{query}.txt"
+
+    upload_blob_with_sas_url(container_sas_url, res, azure_blob_name)
 
 
 def get_llm_output(query, chat_history):
