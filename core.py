@@ -14,13 +14,13 @@ import streamlit as st
 def get_llm_output(query, chat_history):
 
     # Community Cloud
-    gemini_api = st.secrets(["GEMINI_API"])
-    gemini_model = st.secrets(["GEMINI_MODEL"])
-    gemini_embed_model = st.secrets(["GEMINI_EMBED_MODEL"])
-    pinecone_index = st.secrets(["PINECONE_INDEX"])
-    pinecone_api = st.secrets(["PINECONE_API"])
+    gemini_api = st.secrets["GEMINI_API"]
+    gemini_model = st.secrets["GEMINI_MODEL"]
+    gemini_embed_model = st.secrets["GEMINI_EMBED_MODEL"]
+    pinecone_index = st.secrets["PINECONE_INDEX"]
+    pinecone_api = st.secrets["PINECONE_API"]
     os.environ["PINECONE_API_KEY"] = pinecone_api
-    google_application_credentials = st.secrets(["GOOGLE_APPLICATION_CREDENTIALS"])
+    google_application_credentials = st.secrets["GOOGLE_APPLICATION_CREDENTIALS"]
 
     # Local
     # gemini_api = os.getenv("GEMINI_API")
