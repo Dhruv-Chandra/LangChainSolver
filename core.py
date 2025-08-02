@@ -27,9 +27,9 @@ def save_output(query, vectorstore):
         res += f"Relevance Score: {score}\n"
         res += "-" * 50 + "\n"
 
-    with open("./LangChainSolver/result/result.txt", "a") as f:
+    with open("./result/result.txt", "a") as f:
         f.write(res)
-        f.write("\n")
+        f.write("\n\n")
 
 
 def get_llm_output(query, chat_history):
